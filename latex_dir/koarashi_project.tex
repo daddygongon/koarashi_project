@@ -1,11 +1,28 @@
-{{toc}}
+\documentclass[12pt,a4paper]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\begin{document}
+\title{卒業論文\\
+\vspace{4cm} hikiutilsを用いた\\卒業論文作成}
+\author{ 関西学院大学　理工学部　情報科学科\\\\1234 西谷滋人}
+\date{\vspace{3cm} 2017年  3月\\
+\vspace{3cm} 指導教員　　西谷　滋人　教授}
+\maketitle
+\setcounter{tocdepth}{6}
+\tableofcontents
 
-!小嵐くんのプログラミングスキル向上プロジェクト
-!!CUI
+\tableofcontents
+\section{小嵐くんのプログラミングスキル向上プロジェクト}
+\subsection{CUI}
 一般的に，コンピュータへの指図は，
-*グラフィカルユーザインターフェース,Graphical User Interface, GUI
+
+\begin{itemize}
+\item グラフィカルユーザインターフェース,Graphical User Interface, GUI
+\end{itemize}
 で行うことが普通です．しかし，その裏では，
-*キャラクター(文字)ユーザインタフェース，character user interface, CUI
+
+\begin{itemize}
+\item キャラクター(文字)ユーザインタフェース，character user interface, CUI
+\end{itemize}
 が実際の仕事をこなしています．
 
 CUIは一般的なユーザには見えません．
@@ -15,16 +32,23 @@ GUIに対してユーザが行った制御操作を
 
 われわれプログラマーはこのこびとに直接指示を出します．
 
-!!ディレクトリ
+\subsection{ディレクトリ}
 コンピュータには幾つものファイルがあります．
 このファイルを操作することによって
 プログラマが意図したようにコンピュータをふるまわせます．
 
 ファイルの種類は，大雑把に，
-* データファイル
-** ソース，設定，テキスト，図表など
-* 実行ファイル
-** アプリケーション，フィルター，コマンドなど
+
+\begin{itemize}
+\item データファイル
+\begin{itemize}
+\item ソース，設定，テキスト，図表など
+\end{itemize}
+\item 実行ファイル
+\begin{itemize}
+\item アプリケーション，フィルター，コマンドなど
+\end{itemize}
+\end{itemize}
 に分けられます．
 
 このたくさんあるファイルを管理しやすくするためにディレクトリと呼ばれる
@@ -32,11 +56,13 @@ GUIに対してユーザが行った制御操作を
 
 ディレクトリというのは電話帳とか，住所録に似ていることからつけられた名前です．
 
-!!コマンド
+\subsection{コマンド}
 CUIは別名command line interface, CLIとも呼ばれます．
 コマンドというのは命令という意味です．
 英語の簡単な単語や文章からなります．
- ls
+\begin{quote}\begin{verbatim}
+ls
+\end{verbatim}\end{quote}
 と打ち込んでください．これは，リスト(list)の省略形を意図しており，
 ファイルのリストを出しなさいという命令です．
 
@@ -46,84 +72,111 @@ CUIは別名command line interface, CLIとも呼ばれます．
 ディレクトリというのが電話帳とか，住所録に似ていることからつけられたのと
 同じ発想です．
 
-!!カレントディレクトリー
+\subsection{カレントディレクトリー}
 ファイルのディレクトリはツリー構造になっています．
-木の幹から枝が分かれるようなイメージからついた名前です．
-ただしそのイメージはさかさまになっていて，
-上から下にいくにつれて
-根から幹，えだ，そしてはっぱへと広がっていきます．
-ツリーの一番根本，これをトップと言いますが，そこのディレクトリをルートディレクトリと呼びます．
-ルートは木の根という意味です．
+木の幹から枝が分かれるようなイメージです．
+ツリーの一番根本のところをルートディレクトリと呼びます．
+木の根からつけられた名前です．
 
 そこから順にディレクトリはツリーの階層にしたがって構成されています．
 プログラマが作業するには，その中のどこかに入ってファイルを操作したり，
 編集したりします．現在いる場所を表示するには，
- pwd
+\begin{quote}\begin{verbatim}
+pwd
+\end{verbatim}\end{quote}
 と命令します．
- print working directory
- 作業ディレクトリーをプリントしなさい
+\begin{quote}\begin{verbatim}
+print working directory
+作業ディレクトリーをプリントしなさい
+\end{verbatim}\end{quote}
 という意味です．
 
 今いる場所はカレントディレクトリーと呼ばれます．
 もっかのあるいはいまのディレクトリという意味です．
 
 ここにあるファイルやディレクトリを表示するのが，
- ls
+\begin{quote}\begin{verbatim}
+ls
+\end{verbatim}\end{quote}
 エルエスコマンドの目的です．
 
 カレントディレクトリーにあたらしいディレクトリを作るには，
- mkdir hogehoge
- mkdirはmake directoryの略
+\begin{quote}\begin{verbatim}
+mkdir hogehoge
+\end{verbatim}\end{quote}
 とします．hogehogeというのはなんでもいいけど適当な名前を打ち込む時によく使う表現です．
 
 カレントディレクトリからhogehogeのディレクトリに移動するには，
- cd hogehoge
- cdはchange directoryの略
+\begin{quote}\begin{verbatim}
+cd hogehoge
+\end{verbatim}\end{quote}
 とすれば動きます．ここで
- pwd
+\begin{quote}\begin{verbatim}
+pwd
+\end{verbatim}\end{quote}
 と打てば，最後がhogehogeとなったディレクトリ名が返されてくるはずです．
 
-!!ファイル操作
+\subsection{ファイル操作}
 なにか新しいファイルを作りましょう．
- touch test.c
+\begin{quote}\begin{verbatim}
+touch test.c
+\end{verbatim}\end{quote}
 と打ち込んでください．
 これはtest.cという名前のファイルに触りなさいという命令ですが，
 副作用として，その名前のファイルがない場合には，
 自動的にその名前がついた，中身が何もないファイルを作ります．
 
 ファイルの名前は，
- 名前ドットC
+\begin{quote}\begin{verbatim}
+名前ドットC
+\end{verbatim}\end{quote}
 というようにピリオドで区切られています．
 ピリオドより後ろにある部分を拡張子と呼びます．
 拡張子によってファイルの種類を区別しています．
- C
+\begin{quote}\begin{verbatim}
+C
+\end{verbatim}\end{quote}
 というのは
- C言語で書かれたプログラムのソースコードだよ
+\begin{quote}\begin{verbatim}
+C言語で書かれたプログラムのソースコードだよ
+\end{verbatim}\end{quote}
 ということを意図しています．
 
 このファイルの名前を変更しましょう．
- mv test.c first.c
+\begin{quote}\begin{verbatim}
+mv test.c first.c
+\end{verbatim}\end{quote}
 と打ち込んでください．直訳すると
- test.cをfirst.cにmoveしなさい，動かせ
+\begin{quote}\begin{verbatim}
+test.cをfirst.cにmoveしなさい，動かせ
+\end{verbatim}\end{quote}
 ですが，その結果として名前がfirst.cに変更されます．
 
 ファイルのコピーを作るのは，
- cp first.c second.c
+\begin{quote}\begin{verbatim}
+cp first.c second.c
+\end{verbatim}\end{quote}
 です．cpがcopyの略だというのはわかっていただけますね．
 
 ファイルを削除するのは
- rm second.c
+\begin{quote}\begin{verbatim}
+rm second.c
+\end{verbatim}\end{quote}
 です．アールエムはremoveの略です．
 
 このとき
- remove second.c? 
+\begin{quote}\begin{verbatim}
+remove second.c?
+\end{verbatim}\end{quote}
 と返ってくるときがあります．これは破壊的な操作をコンピュータに
 命令した時に本当にそれがプログラマの意図した操作かどうかを
 コンピュータが確認するために返してきた反応です．
- y
+\begin{quote}\begin{verbatim}
+y
+\end{verbatim}\end{quote}
 yesの一文字目を打ち込んでreturnして，本気だぜというのをコンピュータに伝えてください．
 
-!編集
+\section{編集}
 さて，では初めてのプログラムを作っていきましょう．
 
 プログラムを書くには，それ専用のエディターを使います．
@@ -131,51 +184,58 @@ yesの一文字目を打ち込んでreturnして，本気だぜというのを�
 私はemacs(イーマックス)です．これしかわからないので，これで説明していきます．
 
 エディターを起動するには，
- emacs first.c
+\begin{quote}\begin{verbatim}
+emacs first.c
+\end{verbatim}\end{quote}
 と打ち込みます．
 
 ここで次のテキストを打ち込んでください．
-<<< c
+\begin{quote}\begin{verbatim}
 #include <stdio.h>
 
 int main(void){
   printf("Hello world.\n");
 }
->>>
+\end{verbatim}\end{quote}
 これをc-x, c-sで保存します．そしてc-zでemacsから抜けます．
 
 この後，
- gcc first.c
+\begin{quote}\begin{verbatim}
+gcc first.c
+\end{verbatim}\end{quote}
 と打ち込んでください．これは，first.cをgccでコンパイルしなさいという意味です．
-
- ls
+\begin{quote}\begin{verbatim}
+ls
+\end{verbatim}\end{quote}
 してみてください．新しいファイルとしてa.outというのが出来上がっているはずです．
 これが初めて作った実行ファイルです．これを実行させてみましょう．
- ./a.out
+\begin{quote}\begin{verbatim}
+./a.out
+\end{verbatim}\end{quote}
 と打ち込んでください．
-<<< csh
+\begin{quote}\begin{verbatim}
 bob% ./a.out
 Hello world.
->>>
+\end{verbatim}\end{quote}
 と返ってくるはずです．
 
-!!バグ取り
+\subsection{バグ取り}
 打ち込んだテキストに間違いがあるとうまく動きません．
 間違いのことをバグと言います．虫がコードを食い荒らしているイメージです．
 その時はemacsへ戻って編集していく必要があります．
 
 例えば，
-<<< c
+\begin{quote}\begin{verbatim}
 bob% cat first_bug.c
 include 'stdio.h'
 
 int main(void){
   printf("Hello world.")
 
->>>
+\end{verbatim}\end{quote}
 というのを打ち込んだとします．幾つもバグ，虫がコードを食い荒らしていて
 うまくコンパイルが通りません．
-<<< bash
+\begin{quote}\begin{verbatim}
  bob% gcc first_bug.c
 first_bug.c:1:1: error: unknown type name 'include'
 include 'stdio.h'
@@ -184,7 +244,7 @@ first_bug.c:1:9: error: expected identifier or '('
 include 'stdio.h'
         ^
 2 errors generated.
->>>
+\end{verbatim}\end{quote}
 というのが典型的なエラーの報告です．通常はエラーが確認された
 一番上の行が表示されます．じっくりと聞いてどこからのエラーの報告かを
 理解してからemacsへ戻ってその行を編集してください．
@@ -193,35 +253,39 @@ include 'stdio.h'
 バグ取りをしながら，C言語で書かれたプログラムの典型的な構造を読み取ってください．
 
 順に説明します．
-# printfという関数を使いますが，それを使うために必要なヘッダーファイルをあらかじめ読み込む必要があります．
-# 読み込みはincludeという英語があります．
-# そういう命令だよということで，#includeとします．
-# そのファイルは鉤括弧<>でくくられるか，ダブルコーテーションでくくられる必要があります．
-# C言語ではかならずmain関数というのを作る必要があります．
-# C言語では関数が返す型を明示する必要があります．
-# intというのはmainという関数が返す型が整数だよという意味です．
-# 関数は引数をとります．丸括弧のなかに引数を入れます．
-# mainですが今は何も引数を取らないということを明示するためにvoid, 「空」を取らせています．
-# C言語ではプログラム構造の単位を領域分けするために波カッコ{}でくくります．
-# printfはformatしたテキストを打ち出せと命令する関数です．
-# printfの命令の内容は丸括弧()の中に入れます．
-# printfではダブルコーテーションで囲まれた中にフォーマットを入れています．
-# ここでは，"hello world."と打出させています．
-# そのあと，改行をいれます．これは\nエンエヌと発音します．
-# printfに関する命令が終わったことを明示するためにセミコロン;を入れます．
-# このセミコロンは文章のおわり，文末を意味するために，ターミネータと呼びます
-これで先ほどのhello worldプログラムのソースの解説は終わりです．
 
- mv first.c hello_world.c
+\begin{enumerate}
+\item printfという関数を使いますが，それを使うために必要なヘッダーファイルをあらかじめ読み込む必要があります．
+\item 読み込みはincludeという英語があります．
+\item そういう命令だよということで，\#includeとします．
+\item そのファイルは鉤括弧<>でくくられるか，ダブルコーテーションでくくられる必要があります．
+\item C言語ではかならずmain関数というのを作る必要があります．
+\item C言語では関数が返す型を明示する必要があります．
+\item intというのはmainという関数が返す型が整数だよという意味です．
+\item 関数は引数をとります．丸括弧のなかに引数を入れます．
+\item mainですが今は何も引数を取らないということを明示するためにvoid, 「空」を取らせています．
+\item C言語ではプログラム構造の単位を領域分けするために波カッコ{}でくくります．
+\item printfはformatしたテキストを打ち出せと命令する関数です．
+\item printfの命令の内容は丸括弧()の中に入れます．
+\item printfではダブルコーテーションで囲まれた中にフォーマットを入れています．
+\item ここでは，"hello world."と打出させています．
+\item そのあと，改行をいれます．これは\\nエンエヌと発音します．
+\item printfに関する命令が終わったことを明示するためにセミコロン;を入れます．
+\item このセミコロンは文章のおわり，文末を意味するために，ターミネータと呼びます
+\end{enumerate}
+これで先ほどのhello worldプログラムのソースの解説は終わりです．
+\begin{quote}\begin{verbatim}
+mv first.c hello_world.c
+\end{verbatim}\end{quote}
 としてプログラムの振る舞いがわかる名前に付け替えておきましょう．
 
-出来上がったa.outもhello_worldとするといいでしょう．
+出来上がったa.outもhello\_worldとするといいでしょう．
 アンダーバーはファイル名で使えない空白の代わりによく使います．
 単語の区切りや幾つもの意味を組み合わせるための工夫です．
-
 
 この後，c言語の学習は
 変数，型，制御，loop, 関数
 と進めていきます．記述がくどいかもしれませんが，ゆるしてください．
 
 来週書く内容を忘れないためのメモ，file mode, permission，省略，補間，ドット，ドットドット
+\end{document}
