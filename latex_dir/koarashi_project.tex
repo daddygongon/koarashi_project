@@ -1,11 +1,10 @@
 \documentclass[12pt,a4paper]{jsarticle}
 \usepackage[dvipdfmx]{graphicx}
 \begin{document}
-\title{卒業論文\\
-\vspace{4cm} hikiutilsを用いた\\卒業論文作成}
-\author{ 関西学院大学　理工学部　情報科学科\\\\1234 西谷滋人}
-\date{\vspace{3cm} 2017年  3月\\
-\vspace{3cm} 指導教員　　西谷　滋人　教授}
+\title{プロジェクト\\
+\vspace{4cm} 小嵐}
+\author{ 関西学院大学　理工学部　情報科学科\\\\西谷滋人}
+\date{\vspace{3cm} 2017年  春学期}
 \maketitle
 \setcounter{tocdepth}{6}
 \tableofcontents
@@ -74,9 +73,12 @@ ls
 
 \subsection{カレントディレクトリー}
 ファイルのディレクトリはツリー構造になっています．
-木の幹から枝が分かれるようなイメージです．
-ツリーの一番根本のところをルートディレクトリと呼びます．
-木の根からつけられた名前です．
+木の幹から枝が分かれるようなイメージからついた名前です．
+ただしそのイメージはさかさまになっていて，
+上から下にいくにつれて
+根から幹，えだ，そしてはっぱへと広がっていきます．
+ツリーの一番根本，これをトップと言いますが，そこのディレクトリをルートディレクトリと呼びます．
+ルートは木の根という意味です．
 
 そこから順にディレクトリはツリーの階層にしたがって構成されています．
 プログラマが作業するには，その中のどこかに入ってファイルを操作したり，
@@ -103,12 +105,14 @@ ls
 カレントディレクトリーにあたらしいディレクトリを作るには，
 \begin{quote}\begin{verbatim}
 mkdir hogehoge
+mkdirはmake directoryの略
 \end{verbatim}\end{quote}
 とします．hogehogeというのはなんでもいいけど適当な名前を打ち込む時によく使う表現です．
 
 カレントディレクトリからhogehogeのディレクトリに移動するには，
 \begin{quote}\begin{verbatim}
 cd hogehoge
+cdはchange directoryの略
 \end{verbatim}\end{quote}
 とすれば動きます．ここで
 \begin{quote}\begin{verbatim}

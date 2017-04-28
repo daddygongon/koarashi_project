@@ -1,6 +1,6 @@
 \contentsline {section}{\numberline {1}小嵐くんのプログラミングスキル向上プロジェクト}{2}
 \contentsline {subsection}{\numberline {1.1}CUI}{2}
-\contentsline {subsection}{\numberline {1.2}ディレクトリ}{3}
+\contentsline {subsection}{\numberline {1.2}ディレクトリ}{2}
 \contentsline {subsection}{\numberline {1.3}コマンド}{3}
 \contentsline {subsection}{\numberline {1.4}カレントディレクトリー}{3}
 \contentsline {subsection}{\numberline {1.5}ファイル操作}{4}

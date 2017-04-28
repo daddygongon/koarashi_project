@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.1.26)  27 APR 2017 19:10
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2017.1.26)  28 APR 2017 10:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -96,36 +96,34 @@ LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 9.
+(Font)              scaled to size 16.60605pt on input line 8.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 9.
+(Font)              scaled to size 16.60605pt on input line 8.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 9.
+(Font)              scaled to size 11.53198pt on input line 8.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 9.
+(Font)              scaled to size 11.53198pt on input line 8.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 9.
+(Font)              <12> on input line 8.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 9.
+(Font)              <8> on input line 8.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 9.
+(Font)              <6> on input line 8.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 9.
+(Font)              scaled to size 5.76599pt on input line 8.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 11.
+(Font)              scaled to size 9.60999pt on input line 10.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 11.
+(Font)              scaled to size 9.60999pt on input line 10.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 11.
+(Font)              scaled to size 13.83836pt on input line 10.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 11.
+(Font)              scaled to size 13.83836pt on input line 10.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 11.
+(Font)              scaled to size 13.83836pt on input line 10.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 11.
- (./koarashi_project.toc [1
-
-]
+(Font)              scaled to size 13.83836pt on input line 10.
+ (./koarashi_project.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -134,7 +132,9 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 2.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 4.805pt on input line 2.
-)
+ [1
+
+])
 \tf@toc=\write3
 \openout3 = `koarashi_project.toc'.
 
@@ -143,27 +143,26 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 \openout4 = `koarashi_project.toc'.
 
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 15.
+(Font)              scaled to size 11.53198pt on input line 14.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 15.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
+(Font)              scaled to size 11.53198pt on input line 14.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 18.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
- [2]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 45.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 45.
+(Font)              scaled to size 9.60999pt on input line 44.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 45.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 45.
- [3] [4]
-[5] [6] [7] [8] [9] (./koarashi_project.aux) ) 
+(Font)              scaled to size 9.60999pt on input line 44.
+ [2] [3] [4]
+[5] [6] [7] [8] (./koarashi_project.aux) ) 
 Here is how much of TeX's memory you used:
  854 strings out of 493683
  10309 string characters out of 6149653
@@ -171,6 +170,6 @@ Here is how much of TeX's memory you used:
  4460 multiletter control sequences out of 15000+600000
  14763 words of font info for 66 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 25i,6n,21p,213b,379s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,6n,21p,213b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on koarashi_project.dvi (9 pages, 17192 bytes).
+Output written on koarashi_project.dvi (8 pages, 17376 bytes).
