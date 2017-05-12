@@ -1,7 +1,7 @@
 {{toc}}
 !小嵐くんのプログラミングスキル向上プロジェクト
-!![[koarashi_project_cui_intro]]
-!![[koarashi_project_file_directory]]
+!![[no1 CUI|koarashi_project_no1_cui]]
+!!no2 ファイルディレクトリ
 
 !!!プログラミングは言語だけではない
 先週はCUIの話から始めました．プログラマが直接話しかけるコンピュータの中のこびとのことでした．
@@ -23,6 +23,7 @@ first という名前にして，初日の記念にしてもいいのですが�
 書いたコードの振る舞いを表現する名前を使う方が，あとで見直す時に思い出しやすく，
 また中身を検索するのにも便利です．そこで，hello_world を使いましょう．
 
+{{attach_view(koarashi_project.002.jpeg,koarashi_project_figs)}}
 !!!アステリスクと補完
 先週の最後の
  mv a.out hello_world
@@ -250,9 +251,9 @@ int main(void){
 
 !!!課題
 以下の改良をおこなってください．
-#0から9までを出力するように変更しなさい．
-#1から10までを出力するように変更しなさい．
-#"hello koarashi kun."と8回出力するように変更しなさい．
+#0から9までを出力するように変更しなさい．(for_0_9_loop.c)
+#1から10までを出力するように変更しなさい．(for_1_10_loop.c)
+#"hello koarashi kun."と8回出力するように変更しなさい．(koarashi_times_8.c)
 #"hello koarashi kun."と100回出力するように変更しなさい．改行は取っておいてください．
 
 //!今後のメモ
